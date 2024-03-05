@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>Effective Public Communication in Github</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -37,23 +71,79 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="fullcontent">
+<body>
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#projects-readme" id="toc-projects-readme" class="nav-link" data-scroll-target="#projects-readme"><span class="header-section-number">1</span> Project’s README</a>
+  <ul class="collapse">
+  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1"><span class="header-section-number">1.1</span> Introduction</a></li>
+  <li><a href="#what-is-a-readme" id="toc-what-is-a-readme" class="nav-link" data-scroll-target="#what-is-a-readme"><span class="header-section-number">1.2</span> What is a README?</a></li>
+  <li><a href="#when-and-how-to-write-a-readme" id="toc-when-and-how-to-write-a-readme" class="nav-link" data-scroll-target="#when-and-how-to-write-a-readme"><span class="header-section-number">1.3</span> When and How to Write a README</a></li>
+  <li><a href="#crafting-an-effective-readme" id="toc-crafting-an-effective-readme" class="nav-link" data-scroll-target="#crafting-an-effective-readme"><span class="header-section-number">1.4</span> Crafting an Effective README</a></li>
+  <li><a href="#the-template" id="toc-the-template" class="nav-link" data-scroll-target="#the-template"><span class="header-section-number">1.5</span> The Template</a></li>
+  </ul></li>
+  <li><a href="#personal-readme-on-github" id="toc-personal-readme-on-github" class="nav-link" data-scroll-target="#personal-readme-on-github"><span class="header-section-number">2</span> Personal README on GitHub</a>
+  <ul class="collapse">
+  <li><a href="#introducing-yourself" id="toc-introducing-yourself" class="nav-link" data-scroll-target="#introducing-yourself"><span class="header-section-number">2.1</span> Introducing Yourself</a></li>
+  <li><a href="#showcasing-projects-and-skills" id="toc-showcasing-projects-and-skills" class="nav-link" data-scroll-target="#showcasing-projects-and-skills"><span class="header-section-number">2.2</span> Showcasing Projects and Skills</a></li>
+  <li><a href="#encouraging-collaboration" id="toc-encouraging-collaboration" class="nav-link" data-scroll-target="#encouraging-collaboration"><span class="header-section-number">2.3</span> Encouraging Collaboration</a></li>
+  <li><a href="#networking-and-career-advancement" id="toc-networking-and-career-advancement" class="nav-link" data-scroll-target="#networking-and-career-advancement"><span class="header-section-number">2.4</span> Networking and Career Advancement</a></li>
+  <li><a href="#the-art-of-regular-updates" id="toc-the-art-of-regular-updates" class="nav-link" data-scroll-target="#the-art-of-regular-updates"><span class="header-section-number">2.5</span> The Art of Regular Updates</a></li>
+  <li><a href="#github-profile-readme-generator" id="toc-github-profile-readme-generator" class="nav-link" data-scroll-target="#github-profile-readme-generator"><span class="header-section-number">2.6</span> GitHub Profile README Generator</a></li>
+  </ul></li>
+  <li><a href="#personal-info" id="toc-personal-info" class="nav-link" data-scroll-target="#personal-info"><span class="header-section-number">3</span> Personal info</a>
+  <ul class="collapse">
+  <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters"><span class="header-section-number">3.1</span> Why it matters?</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Effective Public Communication in Github</h1>
+</div>
 
 
 
-<section id="effective-use-of-readme-files-in-github" class="level1">
-<h1>Effective Use of README Files in GitHub</h1>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In the dynamic world of data analysis and data science, sharing your projects on GitHub is a common practice, serving purposes like version control, collaboration, and showcasing your work. However, one key element that often gets sidelined is the README.md file. It’s more than just a file; it’s the face of your project. A well-crafted README not only elevates your project’s presentation but also communicates its value and purpose effectively. In this post, we’ll delve into the why and how of creating a compelling README. Plus, we’ll explore the added benefits of a personal README for your GitHub profile.</p>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1 unnumbered">
+<h1 class="unnumbered">Introduction</h1>
+<p>This document outlines 3 ways to effectively communicate on GitHub:</p>
+<ol type="1">
+<li><strong>Project’s README</strong>: A well-crafted README not only elevates your project’s presentation but also communicates its value and purpose effectively.</li>
+<li><strong>Personal README on GitHub</strong>: A personal README in a repository named after your <code>username</code> acts as a professional portfolio on GitHub. This is particularly beneficial for newcomers to the data field. Highlight significant projects, contributions, and areas open for collaboration. This README serves as a valuable tool for networking and job searching.</li>
+<li><strong>Personal info</strong>: Enables to enrich your GitHub profile with some personal information, like links to LinkedIn, Twitter, etc.</li>
+</ol>
 </section>
-<section id="what-is-a-readme" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-readme">What is a README?</h2>
+<section id="projects-readme" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Project’s README</h1>
+<section id="introduction-1" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction-1"><span class="header-section-number">1.1</span> Introduction</h2>
+<p>In the dynamic world of data analysis and data science, sharing your projects on GitHub is a common practice, serving purposes like version control, collaboration, and showcasing your work. However, one key element that often gets sidelined is the <strong>README.md</strong> file. It’s more than just a file; it’s the face of your project. A well-crafted README not only elevates your project’s presentation but also communicates its value and purpose effectively. In this post, we’ll delve into the why and how of creating a compelling README. Plus, we’ll explore the added benefits of a Personal README for your GitHub profile.</p>
+</section>
+<section id="what-is-a-readme" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="what-is-a-readme"><span class="header-section-number">1.2</span> What is a README?</h2>
 <p>A README.md is more than just a text file; it’s the front page of your repository. Written in Markdown, a lightweight markup language, it is saved with the .md extension, enabling rich formatting such as headers, links, images, and more. As the first point of contact for anyone visiting your repository, the README deserves attention. It should succinctly address the following:</p>
 <ul>
 <li>Project’s Purpose and Scope: What’s the big idea and its boundaries?</li>
@@ -61,6 +151,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Usage Instructions: How can one dive in and get started?</li>
 <li>Contribution Guidelines: How can others chip in?</li>
 </ul>
+<p>You can learn more about Markdown at the <a href="https://commonmark.org/">CommonMark</a>, which also has a helpful <a href="https://commonmark.org/help/">reference guide</a> and an <a href="https://commonmark.org/help/tutorial/">interactive tutorial</a>. There are some derivations of Markdown, such as RMarkdown. You can read about them <a href="https://bookdown.org/yihui/blogdown/output-format.html">here</a>.</p>
 <p>Here’s a glimpse of what a Markdown README looks like:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -75,36 +166,63 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>rendered_markdown</figcaption>
 </figure>
 </div>
-<p>You can learn more about Markdown at the <a href="https://commonmark.org/">CommonMark</a>, which also has a helpful <a href="https://commonmark.org/help/">reference guide</a> and an <a href="https://commonmark.org/help/tutorial/">interactive tutorial</a>. There are some derivations of Markdown, such as RMarkdown. You can read about them <a href="https://bookdown.org/yihui/blogdown/output-format.html">here</a>.</p>
 </section>
-<section id="when-and-how-to-write-a-readme" class="level2">
-<h2 class="anchored" data-anchor-id="when-and-how-to-write-a-readme">When and How to Write a README</h2>
-<section id="getting-started-with-your-readme" class="level3">
-<h3 class="anchored" data-anchor-id="getting-started-with-your-readme">Getting Started with Your README</h3>
+<section id="when-and-how-to-write-a-readme" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="when-and-how-to-write-a-readme"><span class="header-section-number">1.3</span> When and How to Write a README</h2>
+<section id="getting-started-with-readme" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="getting-started-with-readme"><span class="header-section-number">1.3.1</span> Getting Started with README</h3>
 <p>Initiate a README with your repository’s creation. Early stages might not offer complete details, but starting this document early sets a foundation for quality. As your project grows, keep your README updated - it’s crucial for reflecting your project’s current state and keeping everyone in the loop.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/initiate_readme.png" class="img-fluid figure-img"></p>
+<figcaption>initiate with readme</figcaption>
+</figure>
+</div>
 </section>
-<section id="editing-your-readme-the-best-approach" class="level3">
-<h3 class="anchored" data-anchor-id="editing-your-readme-the-best-approach">Editing Your README: The Best Approach</h3>
-<p>While you can edit the README directly on GitHub, a better option is to work on it locally using tools like Visual Studio Code (VS Code) or Sublime Text. These editors make the job easier and more efficient, thanks to their markdown-friendly features like syntax highlighting and live previews. It’s a small step that makes a big difference in managing your project’s documentation.</p>
+<section id="editing-readme" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="editing-readme"><span class="header-section-number">1.3.2</span> Editing README</h3>
+<p>You can edit the README directly on GitHub and the following screenshots illustrate how-to.</p>
+<p>When in your repository, click on the README file and then click on the pencil icon to edit it. (Repository is a folder where you store your project files in GitHub.)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/edit_markdown_githb_1.png" class="img-fluid figure-img"></p>
+<figcaption>rendered_markdown</figcaption>
+</figure>
+</div>
+<p>You can then edit the file using markdown syntax and preview the changes before committing them. (Committing is the process of saving the changes to the repository.)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/edit_markdown_githb_2.png" class="img-fluid figure-img"></p>
+<figcaption>rendered_markdown</figcaption>
+</figure>
+</div>
+<p>Once you are satisfied with the changes, you can commit them. )</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/edit_markdown_githb_3.png" class="img-fluid figure-img"></p>
+<figcaption>rendered_markdown</figcaption>
+</figure>
+</div>
+<p>A better option is to work on the file locally using tools like Visual Studio Code (VS Code) or Sublime Text. These editors make the job easier and more efficient, thanks to their markdown-friendly features like syntax highlighting and live previews. It’s a small step that makes a big difference in managing your project’s documentation.</p>
 </section>
 </section>
-<section id="crafting-an-effective-readme" class="level2">
-<h2 class="anchored" data-anchor-id="crafting-an-effective-readme">Crafting an Effective README</h2>
-<p>Creating an effective README is both an art and a science. It’s about making your project inviting and understandable to your audience. Here are some key elements to consider:</p>
-<section id="title" class="level3">
-<h3 class="anchored" data-anchor-id="title">Title</h3>
+<section id="crafting-an-effective-readme" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="crafting-an-effective-readme"><span class="header-section-number">1.4</span> Crafting an Effective README</h2>
+<p>Creating an effective README is both an art and a science. It’s about making your project inviting and understandable to your audience. In this section we will discuss the key elements of a compelling README. It will be an extenive list and not all elements will be applicable to all projects. Here you as the owner or contributor to the project have to decide what is relevant to your project and most importantly - what is relevant to your <strong>audience</strong> (= stakeholders).</p>
+<section id="title" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="title"><span class="header-section-number">1.4.1</span> Title</h3>
 <p>Your title is the headline of your project. It should be clear, descriptive, and capture the essence of your work. Using a single # for the title in Markdown sets it apart with prominence, making it the first thing people notice.</p>
 </section>
-<section id="badges" class="level3">
-<h3 class="anchored" data-anchor-id="badges">Badges</h3>
+<section id="badges" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="badges"><span class="header-section-number">1.4.2</span> Badges</h3>
 <p>Badges offer a fast and efficient way to convey key information about your project. Services like <a href="Shields.io">Shields.io</a> provide badges that can display build status, test coverage, license information, and more. They’re like the quick stats of your project, offering insights at a glance.</p>
 </section>
-<section id="table-of-contents" class="level3">
-<h3 class="anchored" data-anchor-id="table-of-contents">Table of Contents</h3>
+<section id="table-of-contents" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="table-of-contents"><span class="header-section-number">1.4.3</span> Table of Contents</h3>
 <p>For more substantial projects, a table of contents is a godsend. It helps users navigate your README, especially when it’s packed with information. It’s like a map, guiding readers to the section they need without any hassle.</p>
 </section>
-<section id="description" class="level3">
-<h3 class="anchored" data-anchor-id="description">Description</h3>
+<section id="description" class="level3" data-number="1.4.4">
+<h3 data-number="1.4.4" class="anchored" data-anchor-id="description"><span class="header-section-number">1.4.4</span> Description</h3>
 <p>This is where you tell the story of your project. A well-crafted description addresses the WHAT, WHY, and HOW:</p>
 <ul>
 <li>What is this project about? Briefly describe the essence of your project.</li>
@@ -115,14 +233,14 @@ ul.task-list li input[type="checkbox"] {
 <li>Challenges and Solutions: Talk about the hurdles you faced and how you overcame them.</li>
 </ul>
 </section>
-<section id="contents" class="level3">
-<h3 class="anchored" data-anchor-id="contents">Contents</h3>
+<section id="contents" class="level3" data-number="1.4.5">
+<h3 data-number="1.4.5" class="anchored" data-anchor-id="contents"><span class="header-section-number">1.4.5</span> Contents</h3>
 <p>If your project is a complex maze of files and folders, guide your users through it. Describing the structure or providing a visual representation can significantly help in understanding how your project is organized.</p>
 <p>Example of repository contents created with <a href="https://excalidraw.com/">excalidraw</a>:</p>
 <p><img src="images/repository_contents.png" class="img-fluid"></p>
 </section>
-<section id="usage" class="level3">
-<h3 class="anchored" data-anchor-id="usage">Usage</h3>
+<section id="usage" class="level3" data-number="1.4.6">
+<h3 data-number="1.4.6" class="anchored" data-anchor-id="usage"><span class="header-section-number">1.4.6</span> Usage</h3>
 <p>This section is crucial. It should clearly explain how someone can set up and use your project. Cover things like:</p>
 <ul>
 <li>Setup Instructions: Step-by-step guide for setting up your project.</li>
@@ -132,151 +250,160 @@ ul.task-list li input[type="checkbox"] {
 <p>Example of analysis flow created with <a href="https://excalidraw.com/">excalidraw</a>:</p>
 <p><img src="images/analysis_flow.png" class="img-fluid"></p>
 </section>
-<section id="roadmap" class="level3">
-<h3 class="anchored" data-anchor-id="roadmap">Roadmap</h3>
+<section id="roadmap" class="level3" data-number="1.4.7">
+<h3 data-number="1.4.7" class="anchored" data-anchor-id="roadmap"><span class="header-section-number">1.4.7</span> Roadmap</h3>
 <p>If your project is ongoing, a roadmap can be exciting. It gives readers a glimpse into the future of your project, outlining upcoming features or areas for development. It’s also a great way to invite collaboration on specific aspects.</p>
 </section>
-<section id="useful-links-and-credits" class="level3">
-<h3 class="anchored" data-anchor-id="useful-links-and-credits">Useful Links and Credits</h3>
+<section id="useful-links-and-credits" class="level3" data-number="1.4.8">
+<h3 data-number="1.4.8" class="anchored" data-anchor-id="useful-links-and-credits"><span class="header-section-number">1.4.8</span> Useful Links and Credits</h3>
 <p>Here, you can link to additional resources, tutorials, or acknowledgments. If your project is a collaborative effort, give credit where it’s due.</p>
 </section>
-<section id="contribution" class="level3">
-<h3 class="anchored" data-anchor-id="contribution">Contribution</h3>
+<section id="contribution" class="level3" data-number="1.4.9">
+<h3 data-number="1.4.9" class="anchored" data-anchor-id="contribution"><span class="header-section-number">1.4.9</span> Contribution</h3>
 <p>If you’re open to contributions, let people know how they can help. Linking to GitHub’s contribution guidelines can provide potential contributors with the information they need to get started.</p>
 </section>
-<section id="license" class="level3">
-<h3 class="anchored" data-anchor-id="license">License</h3>
+<section id="license" class="level3" data-number="1.4.10">
+<h3 data-number="1.4.10" class="anchored" data-anchor-id="license"><span class="header-section-number">1.4.10</span> License</h3>
 <p>Finally, the license. It’s vital, especially for open-source projects. It tells users what they can and cannot do with your code. For advice on which license to choose, check out this <a href="choosealicense.com">choosealicense.com</a>.</p>
 </section>
 </section>
-<section id="the-template" class="level2">
-<h2 class="anchored" data-anchor-id="the-template">The Template</h2>
-<p>You can use the following template to get started with your README:</p>
-<pre><code># Project Title: Data Analysis of [Dataset Name]
-
-## Introduction
-
-This project is an in-depth analysis of the [Dataset Name], aiming to uncover insights, trends, and patterns that can drive strategic decisions. Through rigorous data exploration and statistical modeling, this project serves as a thorough examination of the dataset's intrinsic properties and potential implications.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Background](#background)
-- [Installation](#installation)
-- [Usage](#usage)
-- [File Descriptions](#file-descriptions)
-- [Results and Discussion](#results-and-discussion)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [License](#license)
-- [Contact](#contact)
-
-## Background
-
-Provide a detailed introduction to the problem you're solving, the dataset's origin, and why this analysis is important.
-
-- What is the significance of this data analysis project?
-- What questions are you attempting to answer?
-- What impact could your findings have?
-
-## Installation
-
-Instructions for setting up the project environment:
-
-pip install -r requirements.txt
-
-
-## Usage
-
-How to run the notebook, scripts, or any related analysis: 
-
-python analysis_script.py
-
-Provide examples of how to run your code to reproduce your analysis.
-
-## File Descriptions
-
-- `data/`: Folder containing the dataset file(s).
-- `notebooks/`: Jupyter notebooks with detailed analysis.
-- `scripts/`: Python scripts for data cleaning and analysis.
-- `reports/`: Generated analysis reports, including visuals and insights.
-
-## Results and Discussion
-
-Discuss the key findings of your analysis. Include visuals or links to detailed reports.
-
-- What patterns did you uncover?
-- How do these results inform the questions posed or the problem being tackled?
-
-## Contributing
-
-If you wish to contribute to this project, please fork this repository and submit a pull request with your suggested changes. For major changes, please open an issue first to discuss what you would like to change.
-
-## Credits
-
-Acknowledge those who have contributed to the project, including data providers, collaborators, and any other support received.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE file for details.
-
-## Contact
-
-For any additional questions or comments, please contact [Your Name] at [Your Email].</code></pre>
+<section id="the-template" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="the-template"><span class="header-section-number">1.5</span> The Template</h2>
+<p>You can use the following template to get started with your README, and then customize it to fit your project’s needs. Delete or add sections as necessary in order to fit your project’s needs.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Project Title: Data Analysis of [Dataset Name]</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>This project is an in-depth analysis of the <span class="co">[</span><span class="ot">Dataset Name</span><span class="co">]</span>, aiming to uncover insights, trends, and patterns that can drive strategic decisions. Through rigorous data exploration and statistical modeling, this project serves as a thorough examination of the dataset's intrinsic properties and potential implications.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Table of Contents</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Introduction</span><span class="co">](#introduction)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Background</span><span class="co">](#background)</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Installation</span><span class="co">](#installation)</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Usage</span><span class="co">](#usage)</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">File Descriptions</span><span class="co">](#file-descriptions)</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Results and Discussion</span><span class="co">](#results-and-discussion)</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Contributing</span><span class="co">](#contributing)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Credits</span><span class="co">](#credits)</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">License</span><span class="co">](#license)</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Contact</span><span class="co">](#contact)</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Background</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>Provide a detailed introduction to the problem you're solving, the dataset's origin, and why this analysis is important.</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What is the significance of this data analysis project?</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What questions are you attempting to answer?</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What impact could your findings have?</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Installation</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>Instructions for setting up the project environment:</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>pip install -r requirements.txt</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Usage</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>How to run the notebook, scripts, or any related analysis: </span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>python analysis_script.py</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Provide examples of how to run your code to reproduce your analysis.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## File Descriptions</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`data/`</span>: Folder containing the dataset file(s).</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`notebooks/`</span>: Jupyter notebooks with detailed analysis.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`scripts/`</span>: Python scripts for data cleaning and analysis.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`reports/`</span>: Generated analysis reports, including visuals and insights.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">## Results and Discussion</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>Discuss the key findings of your analysis. Include visuals or links to detailed reports.</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What patterns did you uncover?</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How do these results inform the questions posed or the problem being tackled?</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contributing</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>If you wish to contribute to this project, please fork this repository and submit a pull request with your suggested changes. For major changes, please open an issue first to discuss what you would like to change.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Credits</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Acknowledge those who have contributed to the project, including data providers, collaborators, and any other support received.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## License</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>This project is licensed under the <span class="co">[</span><span class="ot">MIT License</span><span class="co">](LICENSE.md)</span> - see the LICENSE file for details.</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contact</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>For any additional questions or comments, please contact <span class="co">[</span><span class="ot">Your Name</span><span class="co">]</span> at <span class="co">[</span><span class="ot">Your Email</span><span class="co">]</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="personal-readme-on-github" class="level2">
-<h2 class="anchored" data-anchor-id="personal-readme-on-github">Personal README on GitHub</h2>
-<p>A personal README in a repository named after your username acts as a professional portfolio on GitHub. This is particularly beneficial for newcomers to the data field. Highlight significant projects, contributions, and areas open for collaboration. This README serves as a valuable tool for networking and job searching.</p>
+</section>
+<section id="personal-readme-on-github" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Personal README on GitHub</h1>
+<p>A personal README in a repository named after your <code>username</code> acts as a professional portfolio on GitHub. This is particularly beneficial for newcomers to the data field. Highlight significant projects, contributions, and areas open for collaboration. This README serves as a valuable tool for networking and job searching.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/personal_readme.png" class="img-fluid figure-img"></p>
 <figcaption>Personal README</figcaption>
 </figure>
 </div>
-<section id="introducing-yourself" class="level3">
-<h3 class="anchored" data-anchor-id="introducing-yourself">Introducing Yourself</h3>
+<ul>
+<li>Click on the <code>+</code> sign on the top right corner of your GitHub profile to create a new repository.</li>
+<li>Name the repository after your <code>username</code> (e.g., <code>justasmundeikis</code> in my case).</li>
+<li>Initialize the repository with a README file.</li>
+<li>Customize the README</li>
+<li>Commit the changes and make your personal README public.</li>
+</ul>
+<section id="introducing-yourself" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introducing-yourself"><span class="header-section-number">2.1</span> Introducing Yourself</h2>
 <ul>
 <li>Who You Are: Start with a warm introduction. Share a bit about your background, your journey into data science, and what excites you about this field.</li>
 <li>Your Professional Goals: Talk about your career goals or what you aspire to achieve in the realm of data science. This gives visitors an insight into your professional direction and ambitions.</li>
 </ul>
 </section>
-<section id="showcasing-projects-and-skills" class="level3">
-<h3 class="anchored" data-anchor-id="showcasing-projects-and-skills">Showcasing Projects and Skills</h3>
+<section id="showcasing-projects-and-skills" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="showcasing-projects-and-skills"><span class="header-section-number">2.2</span> Showcasing Projects and Skills</h2>
 <ul>
 <li>Select Projects: Carefully pick projects that best represent your skills and journey. For each, include a summary, the tech stack used, and any unique challenges you faced and overcame.</li>
 <li>Skillset: Enumerate the tools, languages, and technologies you’re proficient in. Be specific – if you’re great at Python, say so; if you’ve mastered R for data visualization, highlight that.</li>
 </ul>
 </section>
-<section id="encouraging-collaboration" class="level3">
-<h3 class="anchored" data-anchor-id="encouraging-collaboration">Encouraging Collaboration</h3>
+<section id="encouraging-collaboration" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="encouraging-collaboration"><span class="header-section-number">2.3</span> Encouraging Collaboration</h2>
 <ul>
 <li>Open for Collaboration: If you’re seeking opportunities to collaborate, make it clear. Describe the types of projects or areas you’re interested in and how others can join you or contribute.</li>
 <li>Highlighting Contributions: If you’ve contributed to open-source or other collaborative projects, showcase them. This not only shows your technical skills but also your ability to work in a community.</li>
 </ul>
 </section>
-<section id="networking-and-career-advancement" class="level3">
-<h3 class="anchored" data-anchor-id="networking-and-career-advancement">Networking and Career Advancement</h3>
+<section id="networking-and-career-advancement" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="networking-and-career-advancement"><span class="header-section-number">2.4</span> Networking and Career Advancement</h2>
 <ul>
 <li>Networking Opportunities: Your README can serve as a networking nexus, connecting you with like-minded professionals, potential mentors, or collaborators. It’s a platform to engage with the broader data science community.</li>
 <li>A Tool for Job Seekers: For those in the job market, this README acts as a living resume. It’s a dynamic reflection of your evolving professional profile, offering recruiters a deeper, more comprehensive understanding of your capabilities and experiences.</li>
 <li>Personal Brand Development: This document is a chance to craft and showcase your personal brand. The projects you choose, the way you describe your journey, and the information you share all contribute to how you’re perceived in the tech community.</li>
 </ul>
 </section>
-<section id="the-art-of-regular-updates" class="level3">
-<h3 class="anchored" data-anchor-id="the-art-of-regular-updates">The Art of Regular Updates</h3>
+<section id="the-art-of-regular-updates" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="the-art-of-regular-updates"><span class="header-section-number">2.5</span> The Art of Regular Updates</h2>
 <p>Keeping It Fresh: Regular updates are crucial. As you evolve professionally, so should your README. Add new projects, update your skills, and refine your career aspirations. This constant updating signals your active engagement in your field and ensures that visitors always have the latest view of your professional life.</p>
 </section>
-<section id="github-profile-readme-generator" class="level3">
-<h3 class="anchored" data-anchor-id="github-profile-readme-generator">GitHub Profile README Generator</h3>
+<section id="github-profile-readme-generator" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="github-profile-readme-generator"><span class="header-section-number">2.6</span> GitHub Profile README Generator</h2>
 <p>If you’re looking for a quick way to get started, check out this <a href="https://rahuldkjain.github.io/gh-profile-readme-generator/">GitHub Profile README Generator</a></p>
 </section>
-<section id="personal-info" class="level3">
-<h3 class="anchored" data-anchor-id="personal-info">Personal info</h3>
+</section>
+<section id="personal-info" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Personal info</h1>
 <p>While you’re updating your README, take a moment to enrich your GitHub profile with some personal touches. It’s about making your digital presence more human and approachable. Here’s how you can do it:</p>
 <ul>
 <li>Professional Profile Picture: A picture is worth a thousand words, and this holds true for your GitHub profile as well. Add a profile picture that aligns with your professional image. A good choice is to use the same picture you have on LinkedIn. This consistency in imagery across platforms helps in building a recognizable personal brand.</li>
-<li>Professional Summary: Use the bio section effectively to introduce yourself with a succinct professional summary. This could include your current role, areas of expertise, and what you’re passionate about in your field. You can use the same you used on LinkedIn.</li>
-<li>Linking Up: Connect your GitHub presence to your broader professional network. Include links to your LinkedIn for detailed work history, Twitter for industry commentary and engagement, and any other platforms where you contribute professionally.</li>
+<li>Professional Summary: Use the bio section effectively to introduce yourself with a succinct professional summary. This could include your current role, areas of expertise, and what you’re passionate about in your field. You can use the same introduction you used on LinkedIn.</li>
+<li>Linking Up: Connect your GitHub presence to your broader professional network. Include links to your LinkedIn for detailed work history, Twitter for industry commentary and engagement, and any other platforms where you contribute professionally. Don’t forget to link these sites back to your GitHub profile as well.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -284,15 +411,13 @@ For any additional questions or comments, please contact [Your Name] at [Your Em
 <figcaption>GitHub_bio</figcaption>
 </figure>
 </div>
-</section>
-<section id="why-it-matters" class="level3">
-<h3 class="anchored" data-anchor-id="why-it-matters">Why it matters?</h3>
+<section id="why-it-matters" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="why-it-matters"><span class="header-section-number">3.1</span> Why it matters?</h2>
 <ul>
 <li>Making Strong First Impressions: The combination of a professional photo and well-placed links creates a powerful first impression. It showcases a polished and deliberate approach to your professional persona.</li>
 <li>Establishing Trust and Credibility: An updated profile with a coherent story adds layers of trust and credibility. It signals to viewers that you are engaged in your profession and attentive to details.</li>
 <li>Cohesive Professional Narrative: Linking your GitHub profile with other professional platforms weaves a cohesive narrative about your career and interests. It allows others to see the breadth of your professional life, understand your contributions to the field, and recognize your areas of expertise.</li>
 </ul>
-</section>
 </section>
 </section>
 

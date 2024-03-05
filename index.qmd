@@ -1,8 +1,27 @@
-# Effective Use of README Files in GitHub
+---
+title: "Effective Public Communication in Github"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-location: left
+    number-sections: true
+---
+
+# Introduction {.unnumbered}
+
+This document outlines 3 ways to effectively communicate on GitHub: 
+
+1. **Project's README**: A well-crafted README not only elevates your project's presentation but also communicates its value and purpose effectively.
+2. **Personal README on GitHub**: A personal README in a repository named after your `username` acts as a professional portfolio on GitHub. This is particularly beneficial for newcomers to the data field. Highlight significant projects, contributions, and areas open for collaboration. This README serves as a valuable tool for networking and job searching.
+3. **Personal info**: Enables to enrich your GitHub profile with some personal information, like links to LinkedIn, Twitter, etc.
+
+
+# Project's README
 
 ## Introduction
 
-In the dynamic world of data analysis and data science, sharing your projects on GitHub is a common practice, serving purposes like version control, collaboration, and showcasing your work. However, one key element that often gets sidelined is the README.md file. It's more than just a file; it's the face of your project. A well-crafted README not only elevates your project's presentation but also communicates its value and purpose effectively. In this post, we'll delve into the why and how of creating a compelling README. Plus, we'll explore the added benefits of a personal README for your GitHub profile.
+In the dynamic world of data analysis and data science, sharing your projects on GitHub is a common practice, serving purposes like version control, collaboration, and showcasing your work. However, one key element that often gets sidelined is the **README.md** file. It's more than just a file; it's the face of your project. A well-crafted README not only elevates your project's presentation but also communicates its value and purpose effectively. In this post, we'll delve into the why and how of creating a compelling README. Plus, we'll explore the added benefits of a Personal README for your GitHub profile.
 
 ## What is a README?
 
@@ -13,6 +32,8 @@ A README.md is more than just a text file; it's the front page of your repositor
 * Usage Instructions: How can one dive in and get started?
 * Contribution Guidelines: How can others chip in?
 
+You can learn more about Markdown at the [CommonMark](https://commonmark.org/), which also has a helpful [reference guide](https://commonmark.org/help/) and an [interactive tutorial](https://commonmark.org/help/tutorial/). There are some derivations of Markdown, such as RMarkdown. You can read about them [here](https://bookdown.org/yihui/blogdown/output-format.html). 
+
 Here’s a glimpse of what a Markdown README looks like:
 
 ![markdown_code](images/markdown_code.png)
@@ -21,21 +42,35 @@ And here's how it transforms on GitHub, turning into a polished, HTML-styled pag
 
 ![rendered_markdown](images/markdown_rendered.png)
 
-You can learn more about Markdown at the [CommonMark](https://commonmark.org/), which also has a helpful [reference guide](https://commonmark.org/help/) and an [interactive tutorial](https://commonmark.org/help/tutorial/). There are some derivations of Markdown, such as RMarkdown. You can read about them [here](https://bookdown.org/yihui/blogdown/output-format.html). 
-
 ## When and How to Write a README
 
-### Getting Started with Your README
+### Getting Started with README
 
 Initiate a README with your repository's creation. Early stages might not offer complete details, but starting this document early sets a foundation for quality.  As your project grows, keep your README updated - it's crucial for reflecting your project's current state and keeping everyone in the loop.
 
-### Editing Your README: The Best Approach
+![initiate with readme](images/initiate_readme.png)
 
-While you can edit the README directly on GitHub, a better option is to work on it locally using tools like Visual Studio Code (VS Code) or Sublime Text. These editors make the job easier and more efficient, thanks to their markdown-friendly features like syntax highlighting and live previews. It’s a small step that makes a big difference in managing your project’s documentation.
+### Editing README
+You can edit the README directly on GitHub and the following screenshots illustrate how-to.
+
+When in your repository, click on the README file and then click on the pencil icon to edit it. (Repository is a folder where you store your project files in GitHub.)
+
+![rendered_markdown](images/edit_markdown_githb_1.png)
+
+You can then edit the file using markdown syntax and preview the changes before committing them. (Committing is the process of saving the changes to the repository.)
+
+![rendered_markdown](images/edit_markdown_githb_2.png)
+
+Once you are satisfied with the changes, you can commit them. )
+
+![rendered_markdown](images/edit_markdown_githb_3.png)
+
+
+ A better option is to work on the file locally using tools like Visual Studio Code (VS Code) or Sublime Text. These editors make the job easier and more efficient, thanks to their markdown-friendly features like syntax highlighting and live previews. It’s a small step that makes a big difference in managing your project’s documentation.
 
 ## Crafting an Effective README
 
-Creating an effective README is both an art and a science. It’s about making your project inviting and understandable to your audience. Here are some key elements to consider:
+Creating an effective README is both an art and a science. It’s about making your project inviting and understandable to your audience. In this section we will discuss the key elements of a compelling README. It will be an extenive list and not all elements will be applicable to all projects. Here you as the owner or contributor to the project have to decide what is relevant to your project and most importantly - what is relevant to your **audience** (= stakeholders).
 
 ### Title
 
@@ -99,9 +134,9 @@ Finally, the license. It’s vital, especially for open-source projects. It tell
 
 ## The Template
 
-You can use the following template to get started with your README:
+You can use the following template to get started with your README, and then customize it to fit your project's needs. Delete or add sections as necessary in order to fit your project's needs.
 
-```
+```markdown
 # Project Title: Data Analysis of [Dataset Name]
 
 ## Introduction
@@ -175,52 +210,58 @@ This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE f
 For any additional questions or comments, please contact [Your Name] at [Your Email].
 ```
 
-## Personal README on GitHub
+# Personal README on GitHub
 
-A personal README in a repository named after your username acts as a professional portfolio on GitHub. This is particularly beneficial for newcomers to the data field. Highlight significant projects, contributions, and areas open for collaboration. This README serves as a valuable tool for networking and job searching.
+A personal README in a repository named after your `username` acts as a professional portfolio on GitHub. This is particularly beneficial for newcomers to the data field. Highlight significant projects, contributions, and areas open for collaboration. This README serves as a valuable tool for networking and job searching.
 
 ![Personal README](images/personal_readme.png)
 
-### Introducing Yourself
+* Click on the `+` sign on the top right corner of your GitHub profile to create a new repository.
+* Name the repository after your `username` (e.g., `justasmundeikis` in my case).
+* Initialize the repository with a README file.
+* Customize the README
+* Commit the changes and make your personal README public.
+
+## Introducing Yourself
 
 * Who You Are: Start with a warm introduction. Share a bit about your background, your journey into data science, and what excites you about this field.
 * Your Professional Goals: Talk about your career goals or what you aspire to achieve in the realm of data science. This gives visitors an insight into your professional direction and ambitions.
 
-### Showcasing Projects and Skills
+## Showcasing Projects and Skills
 
 * Select Projects: Carefully pick projects that best represent your skills and journey. For each, include a summary, the tech stack used, and any unique challenges you faced and overcame.
 * Skillset: Enumerate the tools, languages, and technologies you’re proficient in. Be specific – if you’re great at Python, say so; if you’ve mastered R for data visualization, highlight that.
 
-### Encouraging Collaboration
+## Encouraging Collaboration
 
 * Open for Collaboration: If you’re seeking opportunities to collaborate, make it clear. Describe the types of projects or areas you’re interested in and how others can join you or contribute.
 * Highlighting Contributions: If you’ve contributed to open-source or other collaborative projects, showcase them. This not only shows your technical skills but also your ability to work in a community.
 
-### Networking and Career Advancement
+## Networking and Career Advancement
 
 * Networking Opportunities: Your README can serve as a networking nexus, connecting you with like-minded professionals, potential mentors, or collaborators. It's a platform to engage with the broader data science community.
 * A Tool for Job Seekers: For those in the job market, this README acts as a living resume. It’s a dynamic reflection of your evolving professional profile, offering recruiters a deeper, more comprehensive understanding of your capabilities and experiences.
 * Personal Brand Development: This document is a chance to craft and showcase your personal brand. The projects you choose, the way you describe your journey, and the information you share all contribute to how you’re perceived in the tech community.
 
-### The Art of Regular Updates
+## The Art of Regular Updates
 
 Keeping It Fresh: Regular updates are crucial. As you evolve professionally, so should your README. Add new projects, update your skills, and refine your career aspirations. This constant updating signals your active engagement in your field and ensures that visitors always have the latest view of your professional life.
 
-### GitHub Profile README Generator
+## GitHub Profile README Generator
 
 If you're looking for a quick way to get started, check out this [GitHub Profile README Generator](https://rahuldkjain.github.io/gh-profile-readme-generator/)
 
-### Personal info
+# Personal info
 
 While you're updating your README, take a moment to enrich your GitHub profile with some personal touches. It’s about making your digital presence more human and approachable. Here’s how you can do it:
 
 * Professional Profile Picture: A picture is worth a thousand words, and this holds true for your GitHub profile as well. Add a profile picture that aligns with your professional image. A good choice is to use the same picture you have on LinkedIn. This consistency in imagery across platforms helps in building a recognizable personal brand.
-* Professional Summary: Use the bio section effectively to introduce yourself with a succinct professional summary. This could include your current role, areas of expertise, and what you're passionate about in your field. You can use the same you used on LinkedIn.
-* Linking Up: Connect your GitHub presence to your broader professional network. Include links to your LinkedIn for detailed work history, Twitter for industry commentary and engagement, and any other platforms where you contribute professionally.
+* Professional Summary: Use the bio section effectively to introduce yourself with a succinct professional summary. This could include your current role, areas of expertise, and what you're passionate about in your field. You can use the same introduction you used on LinkedIn.
+* Linking Up: Connect your GitHub presence to your broader professional network. Include links to your LinkedIn for detailed work history, Twitter for industry commentary and engagement, and any other platforms where you contribute professionally. Don't forget to link these sites back to your GitHub profile as well.
     
 ![GitHub_bio](images/user_bio.png)
 
-### Why it matters?
+## Why it matters?
 
 * Making Strong First Impressions: The combination of a professional photo and well-placed links creates a powerful first impression. It showcases a polished and deliberate approach to your professional persona.
 * Establishing Trust and Credibility: An updated profile with a coherent story adds layers of trust and credibility. It signals to viewers that you are engaged in your profession and attentive to details.
